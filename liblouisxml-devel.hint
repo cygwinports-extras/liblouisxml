@@ -1,0 +1,8 @@
+category: Accessibility
+requires: liblouisxml1 liblouis-devel libxml2-devel
+external-source: liblouisxml
+sdesc: "Braille translator for XML documents (development)"
+ldesc: "This is a library intended to provide complete braille 
+transcription services for xml documents. It translates into appropriate 
+braille codes and formats according to its style sheet and the 
+specifications in the document."

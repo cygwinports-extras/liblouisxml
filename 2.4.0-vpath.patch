@@ -1,0 +1,23 @@
+--- origsrc/liblouisxml-2.4.0/man/Makefile.am	2011-05-11 07:12:14.000000000 -0500
++++ src/liblouisxml-2.4.0/man/Makefile.am	2011-06-29 12:18:33.967856000 -0500
+@@ -24,17 +24,17 @@ xml2brl.1: $(top_srcdir)/tools/xml2brl.c
+ 	--name="Translate an xml or a text file into an embosser-ready Braille file." \
+ 	--output=$@
+ 
+-msword2brl.1: $(top_srcdir)/tools/msword2brl $(common_mandeps)
++msword2brl.1: $(top_srcdir)/tools/msword2brl.in $(common_mandeps)
+ 	$(HELP2MAN) ../tools/msword2brl --info-page=$(PACKAGE) \
+ 	--name="Translate an MS Word file into an embosser-ready Braille file." \
+ 	--output=$@
+ 
+-rtf2brl.1: $(top_srcdir)/tools/rtf2brl $(common_mandeps)
++rtf2brl.1: $(top_srcdir)/tools/rtf2brl.in $(common_mandeps)
+ 	$(HELP2MAN) ../tools/rtf2brl --info-page=$(PACKAGE) \
+ 	--name="Translate an RTF file into an embosser-ready Braille file." \
+ 	--output=$@
+ 
+-pdf2brl.1: $(top_srcdir)/tools/pdf2brl $(common_mandeps)
++pdf2brl.1: $(top_srcdir)/tools/pdf2brl.in $(common_mandeps)
+ 	$(HELP2MAN) ../tools/pdf2brl --info-page=$(PACKAGE) \
+ 	--name="Translate a PDF file into an embosser-ready Braille file." \
+ 	--output=$@

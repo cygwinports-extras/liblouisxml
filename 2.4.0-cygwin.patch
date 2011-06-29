@@ -1,0 +1,11 @@
+--- origsrc/liblouisxml-2.4.0/configure.ac	2011-05-11 07:12:14.000000000 -0500
++++ src/liblouisxml-2.4.0/configure.ac	2011-06-29 04:25:49.688128800 -0500
+@@ -69,7 +69,7 @@ AC_FUNC_STAT
+ AC_CHECK_FUNCS([memset])
+ 
+ case $host in
+-  *mingw* | *cygwin*)
++  *mingw*)
+     LDFLAGS="$LDFLAGS -avoid-version"
+     CFLAGS="$CFLAGS -Wl,--add-stdcall-alias"
+   ;;
