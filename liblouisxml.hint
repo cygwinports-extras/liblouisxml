@@ -1,6 +1,0 @@
-category: Accessibility
-sdesc: "Braille translator for XML documents (sources)"
-ldesc: "This is a library intended to provide complete braille 
-transcription services for xml documents. It translates into appropriate 
-braille codes and formats according to its style sheet and the 
-specifications in the document."

@@ -1,0 +1,25 @@
+NAME="liblouisxml"
+VERSION=2.4.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Braille translator for XML documents"
+DESCRIPTION="This is a library intended to provide complete braille
+transcription services for xml documents. It translates into appropriate
+braille codes and formats according to its style sheet and the specifications
+in the document."
+HOMEPAGE="http://code.google.com/p/liblouisxml/"
+SRC_URI="http://liblouisxml.googlecode.com/files/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="
+	2.4.0-cygwin.patch
+	2.4.0-vpath.patch
+	2.4.0-Wimplicit-decls.patch
+"
+
+PKG_NAMES="xml2brl ${NAME}1 ${NAME}-common ${NAME}-devel"
+xml2brl_CATEGORY="Accessibility"
+xml2brl_CONTENTS="--exclude=*.dll usr/bin/ usr/share/man/"
+liblouisxml1_CONTENTS="usr/bin/*-1.dll"
+liblouisxml_common_CONTENTS="usr/share/doc/ usr/share/${NAME}/"
+liblouisxml_devel_CONTENTS="usr/include/ usr/lib/ usr/share/info/"
+
+DISTCLEANFILES="liblouisxml.pc"

@@ -1,8 +1,0 @@
-category: Accessibility
-requires: bash antiword poppler rtf2xml liblouisxml1 liblouis2
-external-source: liblouisxml
-sdesc: "Braille translator for XML documents (apps)"
-ldesc: "This is a library intended to provide complete braille 
-transcription services for xml documents. It translates into appropriate 
-braille codes and formats according to its style sheet and the 
-specifications in the document."
